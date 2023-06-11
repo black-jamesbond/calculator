@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int mainv(void)
+{
+     int times , number =2;
+     for (number = 1; number < 13; times++)
+     {
+     printf(%d * %d = %d\n", number, times, number*times);
+     }
+     return 0;
+}

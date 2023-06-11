@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: background-color 0.98s;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+}
+
+main {
+    margin: 8%;
+
+}
+
+div.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme h3 {
+    font-size: 12px;
+}
+
+.text, .color, .red {
+    color: white;
+}
+
+div.theme {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.toggle {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+
+#toggle-button {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    transform: scale(-0.7);
+    top: 4px;
+    background-color: hsl(6, 63%, 50%);
+}
+
+.toggle-box ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18%;
+    gap: 40px;
+}
+
+button, li {
+    cursor: pointer;
+}
+
+input[type = 'text'] {
+    width: 100%;
+    height: 50px;
+    background-color:hsl(223, 31%, 20%);
+    border: none;
+    border-radius: 10px;
+    font-size: xx-large;
+    color: white;
+    padding-left: 8px;
+}
+
+
+
+
+div.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+}
+
+div.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+div.button-group button {
+    height: 50px ;
+    width: 50px;
+    border: none;
+    font-size: 20px;
+}
+
+#reset-submit {
+    display: flex;
+    gap: 18px;
+}
+
+#reset-submit button {
+    width: 45%;
+    height: 36px;
+    border: none;
+    font-size: 20px;
+}
+
+footer {
+    font-size: 11px;
+    margin-top: 5%;
+    text-align: center;
+    font-style: italic;
+}
+
+.color {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+    border-radius: 4px;
+}
+
+.red {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+    border-radius: 4px;
+}
+
+.btn {
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
+    border-radius: 4px;
+}
+
+/* THEME 2 */
+
+body.active {
+    background-color: hsl(0, 0%, 90%);
+}
+
+body.active #toggle-button {
+    left: 25px;
+}
+
+body.active .toggle {
+    background-color: hsl(0, 5%, 81%);
+}
+
+body.active div.buttons {
+    background-color: hsl(0, 5%, 81%);
+}
+
+body.active input[type = 'text']{
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+body.active .color {
+    background-color:  hsl(185, 42%, 37%);
+    box-shadow: 0px 4px 0px  hsl(185, 58%, 25%)    ;
+}
+
+body.active .red{
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 4px 0px hsl(25, 99%, 27%);
+}
+
+body.active #toggle-button{
+    background-color: hsl(25, 98%, 40%);
+}
+
+body.active .btn {
+    color: hsl(60, 10%, 19%);
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 4px 0px hsl(35, 11%, 61%);
+}
+
+body.active .text {
+    color:  hsl(60, 10%, 19%);
+}
+
+/* THEME 3 */
+
+
+body.more {
+    background-color: hsl(268, 75%, 9%);
+    
+}
+
+body.more #toggle-button {
+    right: 0px;
+   
+}
+
+body.more .toggle {
+    background-color: hsl(268, 71%, 12%);
+}
+
+body.more div.buttons {
+    background-color: hsl(268, 71%, 12%);
+}
+
+body.more input[type = 'text']{
+    background-color: hsl(268, 71%, 12%);
+     color: hsl(52, 100%, 62%);
+}
+
+body.more .color {
+    background-color:  hsl(281, 89%, 26%);
+    box-shadow: 0px 4px 0px  hsl(285, 91%, 52%)   ;
+}
+
+body.more .red{
+    color: hsl(198, 20%, 13%);
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 4px 0px hsl(177, 92%, 70%);
+}
+
+body.more #toggle-button{
+    background-color: hsl(176, 100%, 44%);
+}
+
+body.more .btn {
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 4px 0px hsl(290, 70%, 36%);
+}
+
+body.more .text {
+    color:  hsl(52, 100%, 62%);
+}
+
+@media (min-width : 425px ) {
+    main {
+        margin: 10% 15%;
+    }
+}
+
+@media (min-width : 460px ) {
+    main {
+        margin: 10% 20%;
+    }
+}
+
+@media (min-width : 540px ) {
+    main {
+        margin: 10% 24%;
+    }
+}
+
+@media (min-width : 600px ) {
+    main {
+        margin: 10% 30%;
+    }
+}
+
+
+
+@media (min-width : 770px ) {
+    main {
+        margin: 10% 35%;
+    }
+}
+
+@media (min-width : 1045px ) {
+    main {
+        margin: 10% 37%;
+    }
+}
+
+@media (min-width : 1200px ) {
+    main {
+        margin: 10% 40%;
+    }
+}
+
+/* @media (min-width : 1440px ) {
+    main {
+        margin: 10% 40%;
+    }
+} */
